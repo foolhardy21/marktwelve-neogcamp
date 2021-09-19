@@ -9,7 +9,23 @@ import Quiz from './pages/Quiz'
 const App = () => {
   return (
     <div>
-      app component
+      <Router>
+        <Header />
+        <Switch>
+          <Route path='/is-triangle'>
+            <IsTriangle />
+          </Route>
+          <Route path='/quiz'>
+            <Quiz />
+          </Route>
+          <Route path='/hypotenuse'>
+            <Hypotenuse />
+          </Route>
+          <Route path='/area'>
+            <Area />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
