@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import questions from './quizdata'
+import styles from './Quiz.module.css'
 
 const Quiz = () => {
 
@@ -32,17 +33,17 @@ const Quiz = () => {
     
     return (
         <div>
-            <h3>Quiz on triangles</h3>
-            <form onSubmit={calculateScore}>
+            <h3 className={styles.quiz_heading}>Quiz on triangles</h3>
+            <form className={styles.quiz_form} onSubmit={calculateScore}>
                 {
                     questions.map((qset, index1) => {
                         return (
-                            <div key={index1}>
+                            <div className={styles.quiz_qset} key={index1}>
                                 {qset.ques}
-                                <div onChange={updateValue}>
+                                <div className={styles.quiz_radiogrp} onChange={updateValue}>
                                 {
                                     qset.options.map((option, index) => {
-                                        return <label key={index} htmlFor={`option${index}`}>
+                                        return <label className={styles.quiz_label} key={index} htmlFor={`option${index}`}>
                                                 <input id={`option${index}`} type='radio' name={`${index1}`} value={option}/>
                                                 {option}
                                             </label>
@@ -53,11 +54,11 @@ const Quiz = () => {
                         )
                     })
                 }
-                <input type='submit' value='submit' />
+                <input className={styles.quiz_submit} type='submit' value='submit' />
             </form>
-            {
+            <div className={styles.quiz_verdict}>{
                 result && `${result}`
-            }
+            }</div>
         </div>
     )
 }

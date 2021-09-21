@@ -1,0 +1,37 @@
+.quiz_heading {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+.quiz_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+}
+.quiz_qset {
+    margin: 10px 0;
+}
+.quiz_radiogrp {
+    margin-top: 5px;
+}
+.quiz_label {
+    margin-right: 10px;
+}
+.quiz_submit {
+    width: 30vw;
+    height: 30px;
+    background: #deffea;
+    border-style: none;
+}
+.quiz_submit:hover {
+    cursor: pointer;
+}
+
+.quiz_verdict {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.2rem;
+}

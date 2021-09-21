@@ -1,0 +1,32 @@
+.area_heading {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+.area_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.area_input {
+    width: 30vw;
+    height: 20px;
+}
+.area_submit {
+    width: 30vw;
+    height: 30px;
+    background: #deffea;
+    border-style: none;
+}
+.area_submit:hover {
+    cursor: pointer;
+}
+
+.area_verdict {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.2rem;
+}
