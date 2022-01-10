@@ -13,7 +13,7 @@ const Quiz = () => {
     })
     const [result, setResult] = useState('')
 
-    function calculateScore(e) {
+    const calculateScore = e => {
         e.preventDefault()
         let points = 0
         for(const index in answers) {
@@ -23,7 +23,7 @@ const Quiz = () => {
         }
         setResult(`You scored ${points} points out of 5.`)
     }
-    function updateValue(e) {
+    const updateValue = e => {
         const index = e.target.name
         const value = e.target.value
         let newanswers = {...answers}

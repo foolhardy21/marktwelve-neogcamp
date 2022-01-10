@@ -6,7 +6,7 @@ const Area = () => {
     const [base, setBase] = useState('')
     const [area, setArea] = useState('')
 
-    function calculateResult(e) {
+    const calculateResult = e => {
         e.preventDefault()
         if(!height || !base) {
             setArea('__')

@@ -7,7 +7,7 @@ const IsTriangle = () => {
     const [angle3, setAngle3] = useState('')
     const [message, setMessage] = useState('')
 
-    function checkIfTriangle(e) {
+    const checkIfTriangle = e => {
         e.preventDefault()
         const a = parseInt(angle1)
         const b = parseInt(angle2)

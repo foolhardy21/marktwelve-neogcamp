@@ -6,7 +6,7 @@ const Hypotenuse = () => {
     const [base, setBase] = useState('')
     const [hypotenuse, setHypotenuse] = useState('')
 
-    function calculateResult(e) {
+    const calculateResult = e => {
         e.preventDefault()
         if(!height || !base) {
             setHypotenuse('__')
